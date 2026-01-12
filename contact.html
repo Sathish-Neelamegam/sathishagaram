@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Agaram Foundation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #2c5282;
+            margin-bottom: 10px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .contact-info {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact-info h2 {
+            color: #2c5282;
+            margin-bottom: 20px;
+        }
+        .info-item {
+            margin-bottom: 20px;
+        }
+        .info-item strong {
+            color: #2c5282;
+        }
+        form {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        form h2 {
+            color: #2c5282;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        button {
+            background: #2c5282;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #1e3a5f;
+        }
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Agaram Foundation</h1>
+            <p>We'd love to hear from you. Get in touch with us today.</p>
+        </header>
+
+        <div class="content">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <strong>Address:</strong>
+                    <p>Agaram Foundation<br>Your Address Here<br>City, State ZIP</p>
+                </div>
+                <div class="info-item">
+                    <strong>Phone:</strong>
+                    <p>+1 (123) 456-7890</p>
+                </div>
+                <div class="info-item">
+                    <strong>Email:</strong>
+                    <p>contact@agramfoundation.org</p>
+                </div>
+                <div class="info-item">
+                    <strong>Hours:</strong>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <form>
+                <h2>Send us a Message</h2>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
